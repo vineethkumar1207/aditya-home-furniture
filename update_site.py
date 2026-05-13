@@ -12,7 +12,7 @@ for filepath in files:
         content = f.read()
     
     # 1. Update Brand Name
-    content = content.replace("ARBORVITAE", "ADITYA HOME")
+    content = content.replace("ARBORVITAE", "ADITYA HOME FURNITURE")
     content = content.replace("Arborvitae Furniture", "Aditya Home Furniture")
     content = content.replace("Arborvitae", "Aditya Home Furniture")
     content = content.replace("arborvitaefurniture", "adityahomefurniture")
