@@ -1,7 +1,7 @@
 import os
 import glob
 
-directory = r"c:\Users\vineeth kumar\OneDrive\문서\antigravity projects\arborvitae"
+directory = r"c:\Users\vineeth kumar\OneDrive\Documents\antigravity projects\aditya home furniture"
 
 # Find all html, js files
 files = glob.glob(os.path.join(directory, "*.html"))
