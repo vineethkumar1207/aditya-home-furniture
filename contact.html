@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Aditya Home Furniture</title>
-    <meta name="description" content="Get in touch with Aditya Home Furniture for inquiries, custom orders, or B2B procurement for institutions.">
-    <link rel="canonical" href="https://www.adityahomefurniture.com/contact.html">
-    
+    <meta name="description"
+        content="Get in touch with Aditya Home Furniture for inquiries, custom orders, or B2B procurement for institutions.">
+    <link rel="canonical" href="https://www.adityahomefurniture.net/contact.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/scripts.js" defer></script>
 </head>
+
 <body id="contact-page">
 
     <!-- Header -->
@@ -34,16 +39,17 @@
     </header>
 
     <main style="padding-top: 100px;">
-        
+
         <div class="container section">
             <div class="grid-2" style="gap: var(--spacing-xl);">
-                
+
                 <!-- Contact Form -->
                 <div id="contact-form" class="fade-up">
                     <h1 style="margin-bottom: 1rem;">Get in Touch</h1>
-                    <p class="text-muted" style="margin-bottom: var(--spacing-md);">Have a question about a product or need help with an order? We're here to assist.</p>
-                    
-                    <form action="#" method="POST">
+                    <p class="text-muted" style="margin-bottom: var(--spacing-md);">Have a question about a product or
+                        need help with an order? We're here to assist.</p>
+
+                    <form id="contactForm" onsubmit="sendEmail(event)">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" class="form-control" required>
@@ -67,14 +73,32 @@
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
+
+                    <script>
+                        function sendEmail(e) {
+                            e.preventDefault();
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const subjectSelect = document.getElementById('subject');
+                            const subject = subjectSelect.options[subjectSelect.selectedIndex].text;
+                            const message = document.getElementById('message').value;
+
+                            const mailtoBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+                            const mailtoUrl = `mailto:sales@adityahomefurniture.net?subject=${encodeURIComponent('Aditya Home Furniture: ' + subject)}&body=${mailtoBody}`;
+
+                            window.location.href = mailtoUrl;
+                        }
+                    </script>
                 </div>
 
                 <!-- Info & B2B -->
                 <div class="fade-up" style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
-                    
-                    <div id="store-locator" style="background-color: var(--oak-50); padding: var(--spacing-md); border-radius: var(--radius-md);">
+
+                    <div id="store-locator"
+                        style="background-color: var(--oak-50); padding: var(--spacing-md); border-radius: var(--radius-md);">
                         <h3>Our Atelier</h3>
-                        <p class="text-muted" style="margin-bottom: 1rem;">Visit our showroom to experience the craftsmanship firsthand.</p>
+                        <p class="text-muted" style="margin-bottom: 1rem;">Visit our showroom to experience the
+                            craftsmanship firsthand.</p>
                         <address style="font-style: normal; color: var(--text-primary); line-height: 1.8;">
                             <strong>Aditya Home Furniture Studio</strong><br>
                             Kamalapur road, Narsampet<br>
@@ -82,17 +106,25 @@
                             India<br><br>
                             <strong>Hours:</strong> Mon-Sat, 10am - 6pm (By Appointment)
                         </address>
-                        <a href="mailto:sales@adityahomefurniture.net" style="display: block; margin-top: 1rem; color: var(--teak-700); font-weight: 500;">sales@adityahomefurniture.net</a>
-                        <a href="tel:+919876543210" style="display: block; color: var(--teak-700); font-weight: 500;">+91 98765 43210</a>
+                        <a href="mailto:sales@adityahomefurniture.net"
+                            style="display: block; margin-top: 1rem; color: var(--teak-700); font-weight: 500;">sales@adityahomefurniture.net</a>
+                        <a href="tel:+918686002901"
+                            style="display: block; color: var(--teak-700); font-weight: 500;">+91 8686002901</a>
                     </div>
 
-                    <div id="b2b" style="border: 1px solid var(--oak-300); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                    <div id="b2b"
+                        style="border: 1px solid var(--oak-300); padding: var(--spacing-md); border-radius: var(--radius-md);">
                         <h3>B2B & Institutional Procurement</h3>
-                        <p class="text-muted" style="margin-bottom: 1rem;">We supply high-grade, durable furniture for hotels, offices, and educational institutions.</p>
+                        <p class="text-muted" style="margin-bottom: 1rem;">We supply high-grade, durable furniture for
+                            hotels, offices, and educational institutions.</p>
                         <p style="font-size: 0.9rem; line-height: 1.6;">
-                            <em>Example Partner:</em> We recently completed a full furnishing project for the guest house common areas at <strong>NIT Warangal</strong>, providing pieces engineered for high-traffic environments without compromising on natural aesthetic appeal.
+                            <em>Example Partner:</em> We recently completed a full furnishing project for the guest
+                            house common areas at <strong>NIT Warangal</strong>, providing pieces engineered for
+                            high-traffic environments without compromising on natural aesthetic appeal.
                         </p>
-                        <button class="btn btn-outline" style="margin-top: 1rem; width: 100%;" onclick="document.getElementById('subject').value='b2b'; document.getElementById('name').focus(); window.scrollTo({top: document.getElementById('contact-form').offsetTop - 100, behavior: 'smooth'});">Request a Catalog</button>
+                        <button class="btn btn-outline" style="margin-top: 1rem; width: 100%;"
+                            onclick="document.getElementById('subject').value='b2b'; document.getElementById('name').focus(); window.scrollTo({top: document.getElementById('contact-form').offsetTop - 100, behavior: 'smooth'});">Request
+                            a Catalog</button>
                     </div>
 
                 </div>
@@ -106,7 +138,8 @@
         <div class="container grid-4">
             <div>
                 <a href="index.html" class="logo" style="color: var(--oak-50);">ADITYA HOME</a>
-                <p style="margin-top: 1rem; font-size: 0.9rem;">Elevating spaces with natural materials and uncompromising craftsmanship.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Elevating spaces with natural materials and
+                    uncompromising craftsmanship.</p>
             </div>
             <div>
                 <h3>Shop</h3>
@@ -139,4 +172,5 @@
         </div>
     </footer>
 </body>
+
 </html>
