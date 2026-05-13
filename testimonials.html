@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Testimonials | Aditya Home Furniture</title>
+    <meta name="description" content="Read reviews from our clients in Hyderabad, Chennai, Bangalore, and across India about their Aditya Home Furniture furniture.">
+    <link rel="canonical" href="https://www.adityahomefurniture.com/testimonials.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/scripts.js" defer></script>
+    <script src="assets/jsonld.js" defer></script>
+</head>
+<body id="testimonials-page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">ADITYA HOME</a>
+            <nav class="nav-links">
+                <a href="products.html">Products</a>
+                <a href="collections.html">Collections</a>
+                <a href="about.html">About</a>
+                <a href="testimonials.html" style="color: var(--oak-600);">Reviews</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="cart.html" style="font-weight: 500;" id="nav-cart-link">Cart (0)</a>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        
+        <div class="container section" style="text-align: center;">
+            <h1 class="fade-up">Client Experiences</h1>
+            <p class="fade-up text-muted" style="max-width: 600px; margin: 0 auto; margin-bottom: var(--spacing-md);">Hear directly from our clients about the quality, delivery, and transformative impact of our furniture.</p>
+            
+            <!-- Filters -->
+            <div class="fade-up" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-lg);">
+                <button class="btn btn-primary filter-btn" data-filter="all">All Reviews</button>
+                <button class="btn btn-outline filter-btn" data-filter="Hyderabad">Hyderabad</button>
+                <button class="btn btn-outline filter-btn" data-filter="Chennai">Chennai</button>
+                <button class="btn btn-outline filter-btn" data-filter="Bangalore">Bangalore</button>
+                <button class="btn btn-outline filter-btn" data-filter="Institutional">Institutional</button>
+            </div>
+        </div>
+
+        <section id="all-reviews" class="section container" style="padding-top: 0;">
+            <div class="grid-2">
+                
+                <div class="testimonial-card fade-up testimonial-item" data-region="Hyderabad" id="hyderabad">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-quote">"The European oak dining table is an absolute masterpiece. The finish highlights the natural grain beautifully, and the packaging was incredibly secure. Local delivery in Hyderabad was fast and professional."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Amar" class="author-img" loading="lazy">
+                        <div class="author-info">
+                            <h4>Amar</h4>
+                            <span>Hyderabad — March 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-up testimonial-item" data-region="Chennai" id="chennai">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-quote">"We furnished our master bedroom with the teak set. The craftsmanship is flawless, bringing a warm, modern feel to the room. Customer support in Chennai was responsive and deeply knowledgeable."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Keerthi" class="author-img" loading="lazy">
+                        <div class="author-info">
+                            <h4>Keerthi</h4>
+                            <span>Chennai — February 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-up testimonial-item" data-region="Bangalore" id="bangalore-ajay">
+                    <div class="stars">★★★★☆</div>
+                    <p class="testimonial-quote">"Ordered a custom oak sofa for my apartment. The finish is stunning and fits the space perfectly. We had a minor delivery delay due to rain, but the follow-up communication was excellent."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Ajay" class="author-img" loading="lazy">
+                        <div class="author-info">
+                            <h4>Ajay</h4>
+                            <span>Bangalore — April 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-up testimonial-item" data-region="Bangalore" id="bangalore-revanth">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-quote">"The teak workspace desk completely transformed my home office. It's highly ergonomic and the assembly instructions were clear. A massive improvement to my daily work-from-home routine."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Revanth" class="author-img" loading="lazy">
+                        <div class="author-info">
+                            <h4>Revanth</h4>
+                            <span>Bangalore — January 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-up testimonial-item" data-region="Institutional" id="nit-warangal">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-quote">"We sourced several oak pieces for our guest house common areas. The durability is exceptional for a high-traffic environment, and the campus-grade installation team was highly efficient."</p>
+                    <div class="testimonial-author">
+                        <div class="author-img" style="background: var(--teak-700); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">NIT</div>
+                        <div class="author-info">
+                            <h4>Procurement Office</h4>
+                            <span>NIT Warangal — November 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid-4">
+            <div>
+                <a href="index.html" class="logo" style="color: var(--oak-50);">ADITYA HOME</a>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Elevating spaces with natural materials and uncompromising craftsmanship.</p>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html#living-room">Living Room</a></li>
+                    <li><a href="products.html#dining">Dining</a></li>
+                    <li><a href="products.html#bedroom">Bedroom</a></li>
+                    <li><a href="products.html#outdoor">Outdoor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Brand</h3>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about.html#sustainability">Sustainability</a></li>
+                    <li><a href="testimonials.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#b2b">B2B Procurement</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Aditya Home Furniture. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

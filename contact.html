@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aditya Home Furniture</title>
+    <meta name="description" content="Get in touch with Aditya Home Furniture for inquiries, custom orders, or B2B procurement for institutions.">
+    <link rel="canonical" href="https://www.adityahomefurniture.com/contact.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/scripts.js" defer></script>
+</head>
+<body id="contact-page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">ADITYA HOME</a>
+            <nav class="nav-links">
+                <a href="products.html">Products</a>
+                <a href="collections.html">Collections</a>
+                <a href="about.html">About</a>
+                <a href="index.html#testimonials">Reviews</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="cart.html" style="font-weight: 500;" id="nav-cart-link">Cart (0)</a>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        
+        <div class="container section">
+            <div class="grid-2" style="gap: var(--spacing-xl);">
+                
+                <!-- Contact Form -->
+                <div id="contact-form" class="fade-up">
+                    <h1 style="margin-bottom: 1rem;">Get in Touch</h1>
+                    <p class="text-muted" style="margin-bottom: var(--spacing-md);">Have a question about a product or need help with an order? We're here to assist.</p>
+                    
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Status</option>
+                                <option value="custom">Custom Piece Request</option>
+                                <option value="b2b">B2B Procurement</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Info & B2B -->
+                <div class="fade-up" style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
+                    
+                    <div id="store-locator" style="background-color: var(--oak-50); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <h3>Our Atelier</h3>
+                        <p class="text-muted" style="margin-bottom: 1rem;">Visit our showroom to experience the craftsmanship firsthand.</p>
+                        <address style="font-style: normal; color: var(--text-primary); line-height: 1.8;">
+                            <strong>Aditya Home Furniture Studio</strong><br>
+                            Kamalapur road, Narsampet<br>
+                            Warangal district<br>
+                            India<br><br>
+                            <strong>Hours:</strong> Mon-Sat, 10am - 6pm (By Appointment)
+                        </address>
+                        <a href="mailto:sales@adityahomefurniture.net" style="display: block; margin-top: 1rem; color: var(--teak-700); font-weight: 500;">sales@adityahomefurniture.net</a>
+                        <a href="tel:+919876543210" style="display: block; color: var(--teak-700); font-weight: 500;">+91 98765 43210</a>
+                    </div>
+
+                    <div id="b2b" style="border: 1px solid var(--oak-300); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <h3>B2B & Institutional Procurement</h3>
+                        <p class="text-muted" style="margin-bottom: 1rem;">We supply high-grade, durable furniture for hotels, offices, and educational institutions.</p>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">
+                            <em>Example Partner:</em> We recently completed a full furnishing project for the guest house common areas at <strong>NIT Warangal</strong>, providing pieces engineered for high-traffic environments without compromising on natural aesthetic appeal.
+                        </p>
+                        <button class="btn btn-outline" style="margin-top: 1rem; width: 100%;" onclick="document.getElementById('subject').value='b2b'; document.getElementById('name').focus(); window.scrollTo({top: document.getElementById('contact-form').offsetTop - 100, behavior: 'smooth'});">Request a Catalog</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid-4">
+            <div>
+                <a href="index.html" class="logo" style="color: var(--oak-50);">ADITYA HOME</a>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Elevating spaces with natural materials and uncompromising craftsmanship.</p>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="products.html#living-room">Living Room</a></li>
+                    <li><a href="products.html#dining">Dining</a></li>
+                    <li><a href="products.html#bedroom">Bedroom</a></li>
+                    <li><a href="products.html#outdoor">Outdoor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Brand</h3>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about.html#sustainability">Sustainability</a></li>
+                    <li><a href="testimonials.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#b2b">B2B Procurement</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Aditya Home Furniture. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

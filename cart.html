@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Aditya Home Furniture</title>
+    <meta name="description" content="Review your cart and proceed to checkout.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/scripts.js" defer></script>
+</head>
+<body id="cart-page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">ADITYA HOME</a>
+            <nav class="nav-links">
+                <a href="products.html">Products</a>
+                <a href="collections.html">Collections</a>
+                <a href="about.html">About</a>
+                <a href="index.html#testimonials">Reviews</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="cart.html" style="font-weight: 500; color: var(--oak-600);" id="nav-cart-link">Cart (0)</a>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px; min-height: 70vh;">
+        
+        <div class="container section">
+            <h1 class="fade-up" style="margin-bottom: var(--spacing-lg);">Your Cart</h1>
+            
+            <div class="grid-2 fade-up" style="gap: var(--spacing-xl); grid-template-columns: 2fr 1fr;">
+                
+                <!-- Cart Items -->
+                <div id="cart-items-container">
+                    <!-- JS will populate this -->
+                </div>
+
+                <!-- Order Summary -->
+                <div style="background-color: var(--oak-50); padding: var(--spacing-md); border-radius: var(--radius-md); height: fit-content;">
+                    <h3 style="margin-bottom: 1rem;">Order Summary</h3>
+                    
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: var(--muted);">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">₹0</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--muted); border-bottom: 1px solid var(--oak-300); padding-bottom: 1rem;">
+                        <span>Shipping</span>
+                        <span>Calculated at checkout</span>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-md); font-weight: 600; font-size: 1.2rem;">
+                        <span>Estimated Total</span>
+                        <span id="cart-total">₹0</span>
+                    </div>
+                    
+                    <a href="checkout.html" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">Proceed to Checkout</a>
+                    
+                    <p style="text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 1rem;">Secure checkout powered by Stripe.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Aditya Home Furniture. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
